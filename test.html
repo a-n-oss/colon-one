@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            height: 3000px;
+            /* Force scroll */
+            background: linear-gradient(to bottom, #f0f0f0, #ccc);
+            color: #333;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(to bottom, #1a1a1a, #333);
+                color: #f0f0f0;
+            }
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Scroll down to see the button</h1>
+        <p>This page simulates a long content page (like GitHub logs).</p>
+        <p>Scroll down...</p>
+        <p>Try switching your system theme to Dark Mode to see the button change style!</p>
+    </div>
+    <script src="content.js"></script>
+</body>
+
+</html>

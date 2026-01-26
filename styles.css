@@ -1,0 +1,52 @@
+:root {
+  --colon-one-bg: #333;
+  --colon-one-fg: #fff;
+  --colon-one-border: rgba(255, 255, 255, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colon-one-bg: #f0f0f0;
+    --colon-one-fg: #333;
+    --colon-one-border: rgba(0, 0, 0, 0.2);
+  }
+}
+
+#colon-one-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  /* Start hidden below */
+  z-index: 2147483647;
+  /* Max z-index */
+  background-color: var(--colon-one-bg);
+  color: var(--colon-one-fg);
+  border: 1px solid var(--colon-one-border);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#colon-one-back-to-top.visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#colon-one-back-to-top:hover {
+  background-color: #555;
+}
+
+#colon-one-back-to-top svg {
+  width: 28px;
+  height: 28px;
+}
