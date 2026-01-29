@@ -37,7 +37,7 @@ jobs:
 
       - name: Create ZIP bundle
         run: |
-          zip -r colon-one-${{ github.ref_name }}.zip . -x "*.git*" "tests/*" ".github/*" "node_modules/*" "package.json" "package-lock.json" "*.DS_Store"
+          zip -r colon-one-${{ github.ref_name }}.zip . -x "*.git*" "tests/*" "test-results/*" ".github/*" "node_modules/*" "package.json" "package-lock.json" "*.DS_Store" "test.html"
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1
