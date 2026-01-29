@@ -1,0 +1,11 @@
+{
+    "name": "colon-one-extension",
+    "version": "1.0.0",
+    "description": "Back to Top Chrome Extension",
+    "scripts": {
+        "test": "playwright test"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.40.0"
+    }
+}
